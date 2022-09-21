@@ -1,0 +1,45 @@
+/*****************************************************************************************************
+********************************************** components ********************************************
+******************************************************************************************************/
+
+@import "./var";
+
+//main button
+.cta-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 249px;
+  border-radius: 35px;
+
+  p{
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  &:hover{
+    background-color: lighten($red, 10);
+    transition: background-color .3s ease-in-out;
+  }
+
+  &--red{
+    @extend .cta-btn;
+    background-color: $red;
+  }
+
+  &--orange{
+    @extend .cta-btn;
+    background-color: $orange
+  }
+}
+
+/************ spacer **********/
+.spacer{
+  display: flex;
+  flex: 1 1;
+}
+
