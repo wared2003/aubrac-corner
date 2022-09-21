@@ -4,8 +4,24 @@
 /*******************  Edouard Nicolas, github : wared2003 ******************
 ****************************************************************************/
 
+/********************************$ import **********************************/
+@import "./helpers/reset";
+@import "./helpers/var";
+@import "helpers/components";
+
 /**************************** Navbar ***************************************/
 .navbar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 73px;
+  height: 128px;
+  gap: 5px;
+
+  img{
+    width: 230px;
+    margin-right: 50px;
+  }
 }
 
 /**************************** Header Banner  *******************************/
